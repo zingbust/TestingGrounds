@@ -1,0 +1,28 @@
+Game Development Document for Testing Grounds Game
+	
+	Requirements:
+		Play Area
+			Terrain for traversing through.  This could be similar to the terrain in Battle Tank
+			Walls that separate one area of terrain from the next
+			
+		Characters
+			Player character can be 1st person or 3rd person.  Use a humanoid character and modify to make it unique to this game
+			AI characters, make them simple
+			
+		Game Logic
+			Stealth
+				Player character can navigate through terrain and pass through a barrier to the next area if no AI character notices the player character
+				Color of wall changes to red when an AI character spots the player character, player character can't pass through a red wall
+				
+				Stealth requirements
+					A normal navmesh won't work.  Otherwise the AI characters will notice the player character immediately on Begin Play
+					Make terrain such that the navmesh superimposed on that terrain has a rather narrow Z distance
+					Player character, if skilled enough, can look for areas of the terrain where the the AI character is too high or too low to notice him
+			
+			Kill
+				Player character can kill off all AI characters in the terrain area to make the pass-through wall green again which allows pass-through
+				
+		Projectiles
+			Player character has a shooter that can launch projectiles at the AI characters
+			
+		
